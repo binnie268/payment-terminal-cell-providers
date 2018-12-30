@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "code": 200,
+  "results": {
+    "success":true,
+    "id": "MTS",
+    "message": "Submission was successful!"
+  }
+}

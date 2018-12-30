@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "code": 200,
+  "results": {
+    "success":false,
+    "id": "Beeline",
+    "message": "There was an error. Please try again later."
+  }
+}

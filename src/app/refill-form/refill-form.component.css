@@ -1,0 +1,40 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > * {
+  width: 100%;
+}
+
+.form-button-row button,
+.form-button-row a {
+  margin-right: 8px;
+}
+
+.amount-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.amount-container > * {
+  width: 100%;
+  margin-right: 8px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+input.right-align::-webkit-outer-spin-button,
+input.right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.right-align {
+  -moz-appearance: textfield;
+}
+
+mat-form-field {
+  width: 300px;
+}

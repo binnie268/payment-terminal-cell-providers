@@ -1,0 +1,16 @@
+<section
+fxLayout = "column"
+fxLayoutAlign = "center center"
+flex>
+  <div>
+    <h1>
+      SELECT A CELL PROVIDER TO REFILL!
+    </h1>
+    <mat-select placeholder = "Select a provider">
+      <mat-option *ngFor = "let provider of providerList" [value] = "provider.id" (click) = "initiateCall(provider.id)">
+        {{provider.value}}
+      </mat-option>
+    </mat-select>
+  </div>
+
+</section>

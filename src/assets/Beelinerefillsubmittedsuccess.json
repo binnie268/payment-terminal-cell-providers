@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "code": 200,
+  "results": {
+    "success":true,
+    "id": "Beeline",
+    "message": "Submission was successful!"
+  }
+}

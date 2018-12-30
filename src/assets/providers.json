@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "code": 200,
+  "results": [
+    {
+      "id": "MTS",
+      "value": "MTS"
+    },
+    {
+      "id": "Beeline",
+      "value": "Beeline"
+    },
+    {
+      "id": "Megafon",
+      "value": "Megafon"
+    }
+  ]
+}

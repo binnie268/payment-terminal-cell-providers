@@ -1,0 +1,44 @@
+<h1>REFILL {{operatorIdentifier | uppercase}}</h1>
+
+<section
+fxLayout = "column"
+fxLayoutAlign = "center center"
+style = "min-width: 500px;"
+flex>
+  <form
+  [formGroup]="refillForm" class="form-container" (ngSubmit)="onSubmit()"  >
+
+  <mat-form-field>
+    <input #phoneNumber id="phoneNumber" prefix="+7 " mask="(000) 000 00 00" formControlName= "phoneNumber" type="phone" matInput placeholder="Phone Number" required>
+    <mat-icon matSuffix>phone</mat-icon>
+    <mat-error *ngIf="refillForm.controls.phoneNumber?.errors">{{getErrorMessage(phoneNumber.id,refillForm.controls.phoneNumber)}}</mat-error>
+  </mat-form-field>
+
+  <div class="amount-container">
+  <mat-form-field>
+    <input #amount id = "amount" formControlName="amount" matInput type="number" placeholder="Amount" class="right-align" required>
+    <span matPrefix>₽&nbsp;</span>
+    <span matSuffix>.00</span>
+    <mat-error *ngIf="refillForm.controls.amount?.errors">{{getErrorMessage(amount.id,refillForm.controls.amount)}}</mat-error>
+    <!-- <p>{{refillForm.controls.amount?.errors | json}}</p> -->
+  </mat-form-field>
+
+  <mat-form-field>
+  <mat-label>Currency</mat-label>
+  <mat-select [disabled]= "true" value="RUB">
+      <mat-option *ngFor = "let currency of currencyList" [value] = "currency.value">
+        {{currency.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- <mat-form-field>
+      <input disabled matInput placeholder="Currency" value="RUB">
+    </mat-form-field> -->
+  </div>
+
+  <div class="form-button-row">
+    <button type="submit" [disabled] = "!refillForm.valid" mat-stroked-button>Submit</button>
+  </div>
+</form>
+</section>

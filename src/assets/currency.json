@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "code": 200,
+  "results": [
+    {
+      "id": "RUS",
+      "value": "RUB"
+    },
+    {
+      "id": "US",
+      "value": "USD"
+    },
+    {
+      "id": "CAN",
+      "value": "CAD"
+    }
+  ]
+}
