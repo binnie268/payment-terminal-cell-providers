@@ -21,7 +21,8 @@ export class RefillFormComponent implements OnInit {
     provider: [this.operatorIdentifier],
     phoneNumber: ['', [
       Validators.required,
-      Validators.pattern('^[0-9]*$')
+      Validators.pattern('^[0-9]*$'),
+      Validators.minLength(10)
     ]],
     amount: ['',
     [Validators.required,

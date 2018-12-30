@@ -8,21 +8,21 @@ import 'rxjs/add/operator/catch';
 export class ProviderService {
   constructor(private http: HttpClient) {}
 
-  private providerListUrl = '../assets/providers.json';
-  private currencyListUrl = '../assets/currency.json';
+  private providerListUrl = './assets/providers.json';
+  private currencyListUrl = './assets/currency.json';
   private submitFormUrl = '';
   // in real backend server, only one response is returned.
   private urlResponseObject = {
     'Beeline' : [
-      '../assets/Beelinerefillsubmittederror.json',
-      '../assets/Beelinerefillsubmittedsuccess.json'],
+      './assets/Beelinerefillsubmittederror.json',
+      './assets/Beelinerefillsubmittedsuccess.json'],
     'Megafon': [
-      '../assets/Megafonefillsubmittederror.json',
-      '../assets/Megafonefillsubmittedsuccess.json'
+      './assets/Megafonefillsubmittederror.json',
+      './assets/Megafonefillsubmittedsuccess.json'
     ],
     'MTS': [
-      '../assets/MTSrefillsubmittederror.json',
-      '../assets/MTSrefillsubmittedsuccess.json'
+      './assets/MTSrefillsubmittederror.json',
+      './assets/MTSrefillsubmittedsuccess.json'
     ]
   };
 

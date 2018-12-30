@@ -14,7 +14,8 @@ public static getErrorFormMessage(controlName: string, control: FormControl) {
     },
     'phoneNumber': {
       'required': 'You must enter a phone number',
-      'pattern': 'Phone number can only contain digits'
+      'pattern': 'Phone number can only contain digits',
+      'minlength': `Phone number should be ${control && control.errors.minlength ? control.errors.minlength.requiredLength : ''} digits`
     }
   };
 
